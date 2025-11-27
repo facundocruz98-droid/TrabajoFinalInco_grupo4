@@ -118,10 +118,6 @@ def mostrar_materias_filtradas(materias):
 # ============================================================
 #   materias Troncales
 # ============================================================
-
-
-
-
 def cargar_materias_troncales(path="materias_troncales.json"):
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -151,11 +147,9 @@ def cargar_materias_troncales(path="materias_troncales.json"):
     for req, destinos in correlativas_dict.items():
         destinos_str = ", ".join(destinos)
         mensajes.append(
-            f"• Debes haber cursado **{req}** para avanzar a: {destinos_str}."
+            f"• Debes cursar y aprobar **{req}** para avanzar a: {destinos_str}."
         )
-
     return mensajes
-
 
 
 # ============================================================
