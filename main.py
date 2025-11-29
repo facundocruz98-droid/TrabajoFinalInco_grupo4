@@ -42,10 +42,23 @@ def run_engine():
     respuestas["cursa_todas"] = preguntar_si_no(PREGUNTAS_PERFILES["AG"])
     respuestas["retoma_estudios"] = preguntar_si_no(PREGUNTAS_PERFILES["AH"])
     respuestas["doble_carrera"] = preguntar_si_no(PREGUNTAS_PERFILES["AI"])
-
-    print("\n>>> Ejecutando inferencia...\n")
+    print("\nDIFICULTADES ACADÉMICAS ")
+    resp_teorica = preguntar_si_no("¿Tenés dificultad en la parte teórica? (si/no): ")
+    resp_practica = preguntar_si_no("¿Tenés dificultad en la parte práctica? (si/no): ")
+    #print("\n>>> Ejecutando inferencia...\n")
     engine, hechos_usuario = preparar_engine(respuestas, SistemaEducativo, Perfil)
-    
+    # Ahora agregamos las dificultades
+    from hechos import UU, VV
+
+    if resp_teorica:
+      engine.declare(UU())
+
+    if resp_practica:
+     engine.declare(VV())
+
+    # Ejecutar inferencia secundaria
+    engine.run()
+
     finales_ids = imprimir_todo_unificado(engine, hechos_usuario, "reglas.py")
     # Aqui explicaion de TRazabilidad
     from engine_utils import imprimir_trazabilidad

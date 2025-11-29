@@ -39,12 +39,12 @@ def generar_resumen_significados(engine, path_reglas="reglas.py"):
 def imprimir_todo_unificado(engine, hechos_usuario, path_reglas="reglas.py"):
     resumen = generar_resumen_significados(engine, path_reglas)
 
-    inferidos = resumen.get("inferidos", [])
-    finales = resumen.get("finales", [])
+    #inferidos = resumen.get("inferidos", [])
+    #finales = resumen.get("finales", [])
     finales_ids = resumen.get("finales_ids", set())
     troncales = resumen.get("troncales", [])
     materias_filtradas = resumen.get("materias_filtradas", [])
-
+    '''
     print("\n===============================")
     print("      RESUMEN COMPLETO")
     print("===============================\n")
@@ -61,7 +61,7 @@ def imprimir_todo_unificado(engine, hechos_usuario, path_reglas="reglas.py"):
         for linea in finales:
             print(" -", linea)
     else:
-        print(" (No se detectaron hechos finales.)")
+        print(" (No se detectaron hechos finales.)")'''
 
     print("\n=== RECOMENDACIONES ===")
     recs = imprimir_recomendaciones_conversacionales(finales_ids, hechos_usuario, solo_devolver=True)
@@ -77,11 +77,11 @@ def imprimir_todo_unificado(engine, hechos_usuario, path_reglas="reglas.py"):
             print(" •", ruta)
 
     if materias_filtradas:
-        print("\n--- MATERIAS DISPONIBLES SEGÚN TU PERFIL ---")
+        print("\n--- MATERIAS y HORARIOS DISPONIBLES SEGÚN TU PERFIL ---")
         mostrar_materias_filtradas(materias_filtradas)
 
-    print("\n===============================")
+    ''' print("\n===============================")
     print("  FIN DEL RESUMEN COMPLETO")
-    print("===============================\n")
+    print("===============================\n")'''
 
     return finales_ids

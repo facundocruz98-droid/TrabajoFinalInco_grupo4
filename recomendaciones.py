@@ -154,7 +154,37 @@ recomendaciones_personales = {
         "Podés anotar tus clases, parciales, trabajos prácticos y recordatorios, así no se te pasa nada y mantenés todo bien ordenado."
         "Además, te permite ver tu semana de un vistazo y organizar tus tiempos sin estrés. Es una herramienta fácil que te ayuda a estudiar mejor."
        
-    )
+    ),
+    "U1":(
+        "Hacer resúmenes es una gran forma de estudiar, pero lo más importante es que entiendas lo que estás escribiendo."
+        "Cuando resumís con tus propias palabras, fijás mejor la información y después te resulta más fácil repasar."
+        "No busques copiar: buscá comprender primero, y el estudio se te va a hacer mucho más liviano."
+
+        
+        ),
+    "U2":(
+        "Subrayar los conceptos más importantes te ayuda a no perderte entre tanta información."
+        "Es una técnica simple pero muy útil para identificar lo esencial y estudiar con más foco."
+        "Cuando marcás lo clave, después podés repasar más rápido y evitar leer todo de nuevo."
+         ),
+    "U3":(
+        "Hacer diagramas es ideal cuando los temas son largos o tienen muchas partes."
+        "Ver la información organizada en cuadros, flechas o esquemas te permite entender las conexiones más fácil."
+        "Además, son perfectos para repasar antes de un examen porque te muestran todo de un vistazo"
+        ),
+    "V1":(
+        "Resolver ejercicios es la mejor manera de entender realmente una materia práctica."
+        "Aunque te equivoques, cada intento te ayuda a ver en qué fallás y qué necesitás reforzar."
+        "Practicar te da confianza y hace que los parciales te resulten mucho más llevaderos."
+
+        ),
+    "W":(
+        "Ir a las clases de consulta es una ayuda enorme cuando te trabás en algún ejercicio o no entendés un procedimiento."
+        "Los profes suelen explicar con más calma, responder dudas puntuales y darte ejemplos que no siempre aparecen en la clase común."
+        "Aprovechar esas instancias te permite avanzar más seguro y no quedarte atrás."
+
+        ),
+        
 }
 
 

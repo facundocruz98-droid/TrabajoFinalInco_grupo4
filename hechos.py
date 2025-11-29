@@ -67,3 +67,35 @@ class QQ(Fact): pass  # dificultad asistir clases
 class RR(Fact): pass  # plan de descanso
 class SS(Fact): pass  # apoyarse en materiales virtuales
 class TT(Fact): pass  # cronograma de clases
+# ---------------------------------------------------
+# Hechos sobre dificultades (simples)
+# ---------------------------------------------------
+
+class UU(Fact):
+    """Tiene dificultad en la parte teórica"""
+    pass
+
+class U1(Fact):
+    """Hacer resúmenes entendiendo el tema"""
+    pass
+
+class U2(Fact):
+    """Subrayar conceptos claves"""
+    pass
+
+class U3(Fact):
+    """Hacer diagramas"""
+    pass
+
+
+class VV(Fact):
+    """Tiene dificultad en la parte práctica"""
+    pass
+
+class V1(Fact):
+    """Intentar resolver ejercicios"""
+    pass
+
+class W(Fact):
+    """Ir a clases de consulta"""
+    pass

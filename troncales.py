@@ -21,14 +21,14 @@ def cargar_materias_troncales(path="materias_troncales.json"):
 
         for req in requisitos:
             correlativas_dict[req].append(
-                f"{materia} ({anio}, {cuatri} cuatrimestre)"
+                f"{materia} (de {anio} año, {cuatri} cuatrimestre)"
             )
 
     mensajes = []
     for req, destinos in correlativas_dict.items():
         destinos_str = ", ".join(destinos)
         mensajes.append(
-            f"• Debes haber cursado **{req}** para avanzar a: {destinos_str}."
+            f" {req} para avanzar a: {destinos_str}."
         )
 
     return mensajes

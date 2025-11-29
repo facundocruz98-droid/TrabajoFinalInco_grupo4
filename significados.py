@@ -1,4 +1,12 @@
 SIGNIFICADOS = {
+    "AB": "SOlo estudias",
+    "AC": "Trabajás por la mañana ",
+    "AD": "Trabajás por la tarde",
+    "AE": "Trabajás por la noche",
+    "AF": "Vas a cursar solo algunas materias",
+    "AG": "Vas a cursar todas las materias",
+    "AH": "Estás retomando los estudios después de un tiempo",
+    "AI": "Estás estudiando dos carreras a la vez",
     "A": "Dedicar una hora por turno",
     "B": "Seguir el ritmo de la materia",
     "C": "Rendir finales apenas termina",
@@ -45,4 +53,15 @@ SIGNIFICADOS = {
     "RR": "Plan de descanso adecuado",
     "SS": "Apoyo con materiales virtuales",
     "TT": "Armar cronograma de clases",
+    #------------------------------------
+    "UU": "Tiene dificultad teorica",
+    "U1": "Hacer resúmenes entendiendo el tema",
+    "U2": "Subrayar conceptos claves",
+    "U3": "Hacer diagramas",
+    "VV": "Tiene dificultad en la parte práctica",
+    "V1": "Intentar resolver ejercicios",
+    "W":  "Ir a clases de consulta"
+    
+    
+    
 }
