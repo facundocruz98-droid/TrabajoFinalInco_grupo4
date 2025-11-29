@@ -205,7 +205,7 @@ class SistemaEducativo(KnowledgeEngine):
    #31
     @Rule(UU(), W())
     def regla_mixta(self):
-        registrar("R231", ["UU", "W"], ["U1","U2","U3","V1", "W"])
+        registrar("R31", ["UU", "W"], ["U1","U2","U3","V1", "W"])
         self.declare(U1())
         self.declare(U2())
         self.declare(U3())
