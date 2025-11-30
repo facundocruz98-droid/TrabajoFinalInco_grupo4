@@ -59,7 +59,9 @@ recomendaciones_personales = {
     ),
 
     "L": (
-        "Aquí te muestro las materias que se dictan a la mañana para que puedas organizar mejor tu cursada."
+        "Si podés cursar en horario de mañana, aprovechalo: muchas personas están más descansadas y concentradas temprano."
+        "Estar fresco te ayuda a entender mejor las clases, retener información y rendir más en ejercicios y parciales."
+        "Además, te deja la tarde libre para estudiar, repasar o hacer otras actividades sin presión."
     ),
 
     "M": (
@@ -69,7 +71,9 @@ recomendaciones_personales = {
     ),
 
     "N": (
-        "Aquí te muestro las materias que se dictan a la tarde para que puedas organizar mejor tu cursada."
+        "Cursar en horario de tarde puede ser ideal si rendís mejor más tarde en el día o tenés otras actividades por la mañana."
+        "Estar en clase a tu ritmo te ayuda a concentrarte, aprovechar las explicaciones y participar mejor."
+        "Además, te permite organizar tu mañana para estudiar, hacer tareas o descansar, llegando más preparado a la cursada.."
     ),
 
     "R": (

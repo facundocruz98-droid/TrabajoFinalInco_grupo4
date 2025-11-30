@@ -33,31 +33,37 @@ def preparar_engine(respuestas, SistemaEducativo, Perfil):
 
     hechos_usuario = set()
 
-    if respuestas.get("trabaja"):
-        turno = respuestas.get("turno_trabajo") or "AC"
-        engine.declare(Perfil(**{turno: True}))
-        hechos_usuario.add(turno)
+    # === TRABAJA ===
+    if respuestas.get("trabaja") is True:
+        turno = respuestas.get("turno_trabajo")
+        if turno:
+            engine.declare(Perfil(**{turno: True}))
+            hechos_usuario.add(turno)
     else:
-        engine.declare(Perfil(AB=True))
-        hechos_usuario.add("AB")
+        engine.declare(Perfil(AB=True))  # se mantiene tu lógica
+        # NO agregar AB a hechos_usuario
 
-    if respuestas.get("cursa_todas"):
+    # === CURSA TODAS ===
+    if respuestas.get("cursa_todas") is True:
         engine.declare(Perfil(AG=True))
         hechos_usuario.add("AG")
     else:
-        engine.declare(Perfil(AF=True))
-        hechos_usuario.add("AF")
+        engine.declare(Perfil(AF=True))  # se mantiene tu lógica
+        # NO agregar AF a hechos_usuario
 
-    if respuestas.get("retoma_estudios"):
+    # === RETOMA ===
+    if respuestas.get("retoma_estudios") is True:
         engine.declare(Perfil(AH=True))
         hechos_usuario.add("AH")
 
-    if respuestas.get("doble_carrera"):
+    # === DOBLE CARRERA ===
+    if respuestas.get("doble_carrera") is True:
         engine.declare(Perfil(AI=True))
         hechos_usuario.add("AI")
 
     engine.run()
     return engine, hechos_usuario
+
 
 def imprimir_trazabilidad():
     print("\n====================================")

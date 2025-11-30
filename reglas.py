@@ -59,7 +59,7 @@ class SistemaEducativo(KnowledgeEngine):
     # 8
     @Rule(Perfil(AD=True))
     def r8(self):
-        registrar("R8", ["Ad=True"], ["L", "M"])
+        registrar("R8", ["AD=True"], ["L", "M"])
         self.declare(L(), M())
 
     # 9
