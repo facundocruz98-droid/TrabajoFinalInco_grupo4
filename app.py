@@ -45,6 +45,38 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# ========== Evitar aparente Delay de pagina
+
+st.markdown("""
+<style>
+
+/* Evita que los botones se vuelvan transparentes al hacer clic */
+button, .stButton>button {
+    transition: 0.2s;
+    backdrop-filter: none !important;     /* Evita el blur instantáneo */
+}
+
+/* Estado hover */
+button:hover, .stButton>button:hover {
+    opacity: 0.95 !important;
+}
+
+/* Estado activo (cuando haces clic) */
+button:active, .stButton>button:active {
+    opacity: 1 !important;
+    filter: brightness(1.1) !important;   /* Leve efecto, pero SIN transparencias */
+}
+
+/* Evita que Edge/Chrome hagan focus raro */
+button:focus, .stButton>button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+
 # ========== ESTILOS CSS PERSONALIZADOS ==========
 st.markdown("""
 <style>
